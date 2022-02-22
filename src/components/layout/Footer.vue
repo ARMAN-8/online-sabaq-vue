@@ -2,7 +2,7 @@
   <div class="Footer bg-white mt-6">
     <footer
         class="relative w-full flex justify-between flex-wrap  items-center py-3 shadow-lg gap-6 p-6">
-      <div class="container-fluid w-full flex flex-wrap items-center justify-between px-6 gap-6">
+      <div class="container mx-auto flex flex-wrap items-center justify-between px-6 gap-6">
         <div class="">
           <a href="#">
             <img src="../../assets/img/BenefitLearningPlatform.png" alt="footer img"/>
@@ -38,6 +38,8 @@ export default {
 
 .Footer {
   height: 48px;
+  bottom: 0;
+  left: 0;
 }
 
 .contractOffer, .termsOfUse {

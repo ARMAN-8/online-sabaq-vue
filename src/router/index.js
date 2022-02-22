@@ -26,6 +26,11 @@ const routes = [
     name: 'home-student',
     component: () => import('../views/student/Home')
   },
+  {
+    path: '/device-diagnostic',
+    name: 'device-diagnostic',
+    component: () => import('../views/student/DeviceDiagnostic')
+  },
 ]
 
 const router = createRouter({

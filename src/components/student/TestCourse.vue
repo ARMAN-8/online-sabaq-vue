@@ -1,5 +1,5 @@
 <template>
-  <div class="TestCourse flex justify-between items-center space-x-6 border-t-2 py-8">
+  <div class="TestCourse flex justify-between items-center space-x-6 border-t-2 p-6">
     <img class="block w-14 h-10" src="../../assets/img/micro.png" alt="micro img"/>
     <div class="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-1 gap-6">
       <div class="lg:col-span-4 md:col-span-2 space-y-4">

@@ -13,6 +13,6 @@ html body {
 .container {
 }
 
-border {
-    @apply  border border-red-600
+.borderR {
+    @apply border border-red-600
 }

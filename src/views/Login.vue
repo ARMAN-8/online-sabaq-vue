@@ -13,7 +13,13 @@
           <span>Войти</span>
         </button>
         <div class="flex justify-between">
-          <span class="chBoxRemember">Запомнить меня</span>
+          <div class="pretty p-icon p-curve p-smooth">
+            <input type="radio" name="radio66">
+            <div class="state">
+              <i class="icon mdi mdi-check"></i>
+              <label>Swift</label>
+            </div>
+          </div>
           <a class="forgetPsw" href="#">Забыли пароль?</a>
         </div>
       </div>
@@ -26,6 +32,7 @@ export default {
 }
 </script>
 <style scoped>
+@import "/pretty-checkbox/src/pretty-checkbox.scss";
 
 .card {
   width: 304px;
