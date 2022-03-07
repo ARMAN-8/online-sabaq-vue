@@ -171,7 +171,7 @@ export default {
 .navbar ul li a {
   color: #2C3340;
   font-weight: 400;
-  font-size: 10px;
+  font-size: 14px;
   line-height: 11.85px;
 }
 

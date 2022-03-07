@@ -36,6 +36,18 @@ const routes = [
     name: 'pass-the-course',
     component: () => import('../views/student/PassTheCourse')
   },
+
+    /*Instructor*/
+  {
+    path: '/student-taking-course',
+    name: 'student-taking-course',
+    component: () => import('../views/instructor/StudentTakingCourse')
+  },
+  {
+    path: '/instructor-mode',
+    name: 'instructor-mode',
+    component: () => import('../views/instructor/InstructorMode')
+  },
 ]
 
 const router = createRouter({

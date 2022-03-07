@@ -3,28 +3,28 @@
     <div class="text-lg font-normal leading-6 text-gray-400">
       Показано <b>2 из 40</b>
     </div>
-    <div class="flex justify-center">
+    <div class="flex justify-end">
       <nav aria-label="Page navigation example">
-        <ul class="flex list-style-none">
+        <ul class="flex list-style-none space-x-2">
           <li class="page-item disabled">
             <a class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded-full text-gray-500 pointer-events-none focus:shadow-none"
                href="#" tabindex="-1" aria-disabled="true">
-              <i class="fas fa-arrow-left"/>
+              <i class="fas fa-chevron-left"/>
             </a>
           </li>
           <li class="page-item"><a
-              class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded-full text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
-              href="#">1</a></li>
+              class="page-link relative block py-1.5 px-3 border-2 bg-yellow-500 outline-none transition-all duration-300 rounded-full text-white hover:text-white hover:bg-yellow-600 focus:shadow-md"
+              href="#">1 <span class="visually-hidden">(current)</span></a></li>
           <li class="page-item active"><a
-              class="page-link relative block py-1.5 px-3 border-0 bg-blue-600 outline-none transition-all duration-300 rounded-full text-white hover:text-white hover:bg-blue-600 shadow-md focus:shadow-md"
-              href="#">2 <span class="visually-hidden">(current)</span></a></li>
+              class="page-link relative block py-1.5 px-3 border-2 bg-transparent outline-none transition-all duration-300 rounded-full text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+              href="#">2</a></li>
           <li class="page-item"><a
-              class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded-full text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+              class="page-link relative block py-1.5 px-3 border-2 bg-transparent outline-none transition-all duration-300 rounded-full text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
               href="#">3</a></li>
           <li class="page-item">
             <a class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded-full text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
                 href="#">
-              <i class="fas fa-arrow-right"/>
+              <i class="fas fa-chevron-right"/>
             </a>
           </li>
         </ul>
