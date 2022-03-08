@@ -12,13 +12,12 @@
         <button class="signInBtn text-white w-full py-2 rounded-lg">
           <span>Войти</span>
         </button>
-        <div class="flex justify-between">
-          <div class="pretty p-icon p-curve p-smooth">
-            <input type="radio" name="radio66">
-            <div class="state">
-              <i class="icon mdi mdi-check"></i>
-              <label>Swift</label>
-            </div>
+        <div class="flex items-center justify-between">
+          <div class="form-check flex items-center">
+            <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="checkbox" value="" id="flexCheckChecked" checked>
+            <label class="form-check-label inline-block" for="flexCheckChecked">
+              Запомнить меня
+            </label>
           </div>
           <a class="forgetPsw" href="#">Забыли пароль?</a>
         </div>
@@ -32,7 +31,7 @@ export default {
 }
 </script>
 <style scoped>
-@import "/pretty-checkbox/src/pretty-checkbox.scss";
+
 
 .card {
   width: 304px;
@@ -44,14 +43,14 @@ export default {
 .signInTxt {
   font-weight: 300;
   font-size: 16px;
-  line-height: 18.96px;
+  line-height: 19px;
   color: #000000;
 }
 
 .signInTxt span {
   font-weight: 400;
   font-size: 16px;
-  line-height: 18.96px;
+  line-height: 19px;
   color: #000000;
 }
 

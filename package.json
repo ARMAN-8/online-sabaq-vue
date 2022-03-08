@@ -17,6 +17,7 @@
     "tw-elements": "^1.0.0-alpha11",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
+    "vue-stepper": "^1.4.2",
     "vuex": "^4.0.0-0"
   },
   "devDependencies": {

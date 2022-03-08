@@ -11,35 +11,7 @@
           <h3>Тестовые курсы</h3>
 
           <!--stepper-->
-          <ul class="stepper" data-mdb-stepper="stepper" data-mdb-stepper-type="vertical">
-            <li class="stepper-step stepper-active">
-              <div class="stepper-head">
-                <span class="stepper-head-icon"> 1 </span>
-                <span class="stepper-head-text"> step1 </span>
-              </div>
-              <div class="stepper-content">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, ipsa?
-              </div>
-            </li>
-            <li class="stepper-step">
-              <div class="stepper-head">
-                <span class="stepper-head-icon"> 2 </span>
-                <span class="stepper-head-text"> step2 </span>
-              </div>
-              <div class="stepper-content">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, ipsa?
-              </div>
-            </li>
-            <li class="stepper-step">
-              <div class="stepper-head">
-                <span class="stepper-head-icon"> 3 </span>
-                <span class="stepper-head-text"> step3 </span>
-              </div>
-              <div class="stepper-content">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, ipsa?
-              </div>
-            </li>
-          </ul>
+          <Stepper/>
 
         </div>
 
@@ -63,9 +35,10 @@
 </template>
 <script>
 import Header from "@/components/layout/Hedaer";
+import Stepper from "@/components/instructor/Stepper";
 
 export default {
   name: 'InstructorMode',
-  components: {Header}
+  components: {Stepper, Header}
 }
 </script>
