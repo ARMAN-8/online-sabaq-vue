@@ -3,7 +3,7 @@
     <Header/>
     <main class="relative w-full flex flex-wrap items-center justify-between">
       <div class="container">
-        <div class="card bg-white rounded-lg">
+        <div class="card bg-white rounded-lg w-full">
           <ul class="nav nav-tabs flex flex-col md:flex-row flex-wrap list-none border-b-0 pl-0 mb-4" id="tabs-tab"
               role="tablist">
             <li class="nav-item" role="presentation">
