@@ -1,8 +1,8 @@
 <template>
   <div class="Header bg-white">
     <nav
-        class="relative w-full flex flex-wrap items-center justify-between py-3 shadow-lg navbar navbar-expand-lg navbar-dark">
-      <div class="container mx-auto flex flex-wrap items-center justify-between px-6 borderR">
+        class="relative w-full flex flex-wrap items-center justify-between shadow-lg navbar navbar-expand-lg navbar-dark">
+      <div class="container mx-auto flex flex-wrap items-center justify-between px-6">
         <button
             class="navbar-toggler text-gray-200 border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline"
             type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent1"

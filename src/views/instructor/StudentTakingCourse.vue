@@ -2,129 +2,104 @@
   <div class="StudentTakingCourse">
     <Header/>
     <main class="relative w-full flex flex-wrap items-center justify-between">
-      <div class="container mx-auto borderR flex flex-wrap items-center justify-between px-6 py-6">
+      <div class="container">
         <div class="grid lg:grid-cols-12 md:grid-cols-8 grid-cols-1 gap-4">
           <div class="col-span-2">
             <div class="card px-4 py-4">
               <!--search-block-->
-              <div class="flex justify-center">
-                <div class="mb-3 xl:w-96">
-                  <div class="input-group relative flex flex-wrap items-stretch w-full mb-4 rounded">
-                    <input type="search" placeholder="Search" aria-label="Search" aria-describedby="button-addon2"
-                           class="form-control relative flex-auto min-w-0 block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none">
-                    <span
-                        class="input-group-text flex items-center px-3 py-1.5 text-base font-normal text-gray-700 text-center whitespace-nowrap rounded"
-                        id="basic-addon2">
-                      <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search"
-                           class="w-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path fill="currentColor"
-                              d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
-                      </svg>
-                    </span>
+              <form method="GET" class="my-2">
+                <div class="relative text-gray-600 focus-within:text-gray-400">
+                  <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                    <button type="submit" class="p-1 focus:outline-none focus:shadow-outline">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-6 h-6"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </button>
+                  </span>
+                  <input type="search" name="q" class="py-2 text-sm text-white border-2 rounded-md pl-10 focus:outline-none focus:bg-white focus:text-gray-900" placeholder="Search..." autocomplete="off">
+                </div>
+              </form>
+              <!--Select-->
+              <div class="">
+
+                <div class="flex justify-center">
+                  <div class="mb-3 xl:w-96">
+                    <span>Студенты</span>
+                    <select class="form-select appearance-none block w-full px-3 py-1.5 text-base font-normal text-gray-700
+      bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition ease-in-out m-0
+      focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" aria-label="Default select example">
+                      <option selected>Нераспределенные</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
                   </div>
                 </div>
-              </div>
-              <!--Dropdown-->
-              <div class="">
-                <div class="dropdown relative">
-                  Студенты
-                  <button
-                      class="dropdown-toggle border-2 inline-block px-2 py-2.5 bg-white font-medium text-xs leading-tight uppercase rounded focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg active:text-white transition duration-150 ease-in-out flex items-center whitespace-nowrap"
-                      type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                    Нераспределенные
-                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down"
-                         class="w-2 ml-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                      <path fill="currentColor"
-                            d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path>
-                    </svg>
-                  </button>
-                  <ul class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 hidden m-0 bg-clip-padding border-none bg-gray-800"
-                      aria-labelledby="dropdownMenuButton2">
-                    <h6 class="text-gray-400 font-semibold text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent">
-                      Dropdown header
-                    </h6>
-                    <span
-                        class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-300">
-                      Dropdown item text
-                    </span>
-                    <li>
-                      <a class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-300 hover:bg-gray-700 hover:text-white focus:text-white focus:bg-gray-700 active:bg-blue-600"
-                         href="#">
-                        Action
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-300 hover:bg-gray-700 hover:text-white focus:text-white focus:bg-gray-700"
-                         href="#">
-                        Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-300 hover:bg-gray-700 hover:text-white focus:text-white focus:bg-gray-700"
-                         href="#">
-                        Something else here</a>
-                    </li>
-                    <li>
-                      <hr class="h-0 my-2 border border-solid border-t-0 border-gray-300 opacity-25"/>
-                    </li>
-                    <li>
-                      <a class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-300 hover:bg-gray-700 hover:text-white focus:text-white focus:bg-gray-700"
-                         href="#">
-                        Separated link
-                      </a>
-                    </li>
-                  </ul>
+
+                <div class="flex justify-center">
+                  <div class="mb-3 xl:w-96">
+                    <span>Все</span>
+                    <select class="form-select appearance-none block w-full px-3 py-1.5 text-base font-normal text-gray-700
+      bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition ease-in-out m-0
+      focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" aria-label="Default select example">
+                      <option selected>Все</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
                 </div>
-                <div class="dropdown relative">
-                  Курс
-                  <button
-                      class="dropdown-toggle w-full border-2 inline-block px-6 py-2.5 bg-white font-medium text-xs leading-tight uppercase rounded focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg active:text-white transition duration-150 ease-in-out flex items-center whitespace-nowrap"
-                      type="button" id="filterCourse" data-bs-toggle="dropdown" aria-expanded="false">
-                    Все
-                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down"
-                         class="w-2 ml-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                      <path fill="currentColor"
-                            d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path>
-                    </svg>
-                  </button>
-                  <ul class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 hidden m-0 bg-clip-padding border-none bg-gray-800"
-                      aria-labelledby="filterCourse">
-                    <h6 class="text-gray-400 font-semibold text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent">
-                      Dropdown header
-                    </h6>
-                    <span
-                        class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-300">
-                      Dropdown item text
-                    </span>
-                    <li>
-                      <a class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-300 hover:bg-gray-700 hover:text-white focus:text-white focus:bg-gray-700 active:bg-blue-600"
-                         href="#">
-                        Action
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-300 hover:bg-gray-700 hover:text-white focus:text-white focus:bg-gray-700"
-                         href="#">
-                        Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-300 hover:bg-gray-700 hover:text-white focus:text-white focus:bg-gray-700"
-                         href="#">
-                        Something else here</a>
-                    </li>
-                    <li>
-                      <hr class="h-0 my-2 border border-solid border-t-0 border-gray-300 opacity-25"/>
-                    </li>
-                    <li>
-                      <a class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-300 hover:bg-gray-700 hover:text-white focus:text-white focus:bg-gray-700"
-                         href="#">
-                        Separated link
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+
               </div>
               <!--Checkbox-->
-              <div></div>
+              <div>
+                <div class="form-check">
+                  <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="checkbox" value="" id="checkbox_1" checked>
+                  <label class="form-check-label inline-block text-gray-800 text-xs" for="checkbox_1">
+                    Поднятая рука
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="checkbox" value="" id="checkbox_2">
+                  <label class="form-check-label inline-block text-gray-800 text-xs" for="checkbox_2">
+                    Избранные
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="checkbox" value="" id="checkbox_3">
+                  <label class="form-check-label inline-block text-gray-800 text-xs" for="checkbox_3">
+                    Нет Цели
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="checkbox" value="" id="checkbox_4">
+                  <label class="form-check-label inline-block text-gray-800 text-xs" for="checkbox_4">
+                    Активные
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="checkbox" value="" id="checkbox_5">
+                  <label class="form-check-label inline-block text-gray-800 text-xs" for="checkbox_5">
+                    ЧВД
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="checkbox" value="" id="checkbox_6">
+                  <label class="form-check-label inline-block text-gray-800 text-xs" for="checkbox_6">
+                    Не ознакомлены с правилами
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="checkbox" value="" id="checkbox_7">
+                  <label class="form-check-label inline-block text-gray-800 text-xs" for="checkbox_7">
+                    Демо доступ
+                  </label>
+                </div>
+              </div>
               <!--filter-btn-->
               <button class="text-white bg-blue-400 w-full px-6 py-2 rounded-lg my-6">
                 Сбросить фильтры

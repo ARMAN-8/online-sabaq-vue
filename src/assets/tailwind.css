@@ -11,6 +11,7 @@ html body {
 }
 
 .container {
+    @apply  mx-auto flex flex-wrap items-center justify-around p-6
 }
 
 .borderR {

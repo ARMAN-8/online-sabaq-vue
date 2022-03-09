@@ -1,5 +1,5 @@
 <template>
-  <div class="Instructor">
+  <div class="Instructor w-full">
     <div class="card bg-white rounded-lg my-6">
       <h3 class="text-2xl font-bold leading-7 p-6">Классы</h3>
       <div class="flex flex-col border-t-2">
