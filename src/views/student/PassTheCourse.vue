@@ -7,7 +7,7 @@
           <div class="card bg-white p-6 rounded-lg col-span-9 space-y-4">
             <h3 class="testCourseTitle">Тестовые курсы</h3>
             <div class="flex justify-between w-80">
-              <span class="testCourseSubtitle text-yellow-500">Правила</span>
+              <span class="testCourseSubtitle text-blue-500">Правила</span>
               <span class="testCourseSubtitle text-blue-400">Инструкция ответственного</span>
             </div>
             <p>

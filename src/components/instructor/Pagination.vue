@@ -13,7 +13,7 @@
             </a>
           </li>
           <li class="page-item"><a
-              class="page-link relative block py-1.5 px-3 border-2 bg-yellow-500 outline-none transition-all duration-300 rounded-full text-white hover:text-white hover:bg-yellow-600 focus:shadow-md"
+              class="page-link relative block py-1.5 px-3 border-2 bg-blue-500 outline-none transition-all duration-300 rounded-full text-white hover:text-white hover:bg-blue-600 focus:shadow-md"
               href="#">1 <span class="visually-hidden">(current)</span></a></li>
           <li class="page-item active"><a
               class="page-link relative block py-1.5 px-3 border-2 bg-transparent outline-none transition-all duration-300 rounded-full text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"

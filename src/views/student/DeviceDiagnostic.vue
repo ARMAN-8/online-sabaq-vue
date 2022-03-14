@@ -8,7 +8,7 @@
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-16 md:gap-8 gap-4 w-full">
           <div class="card bg-white flex items-center p-6 rounded-lg space-x-4">
-            <div class="p-4 rounded-full bg-yellow-600">
+            <div class="p-4 rounded-full bg-blue-600">
               <span class="text-white font-bold text-2xl">01</span>
             </div>
             <p class="diagnosticP diagnosticPActive">Устройства и <br> подключения</p>
